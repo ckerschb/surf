@@ -1,0 +1,24 @@
+<!--
+    Tuning Fork
+    Logged Out Iframe Redirect
+-->
+<html class="splash-tuning-fork--redirect"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body>
+        <link rel="stylesheet" media="all" href="tuning-fork_data/tuning-fork-redirect.css"><script async="" src="tuning-fork_data/tuning-fork-redirect.js"></script><script data-tuning-fork="redirect">
+            /* eslint-disable */
+            'use strict';
+            (function(t,f,o,r,k){
+                r=t.createElement(f);
+                r.async=1;
+                r.src= [t.location.origin].concat(o.split('/').slice(3)).join('/');
+                k=t.getElementsByTagName(f)[0];
+                k.parentNode.insertBefore(r,k);
+            })(
+                document,
+                'script',
+                decodeURIComponent(document.location.search.split('redirectJs=').pop().split("&").shift())
+            );
+        </script>
+    
+
+</body></html>
