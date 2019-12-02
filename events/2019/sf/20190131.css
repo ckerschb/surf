@@ -1,0 +1,14 @@
+.logos {
+	display: -ms-flexbox!important;
+	display: -webkit-flex!important;
+	display: flex!important;
+	-ms-flex-align: center!important;
+	-webkit-align-items: center!important;
+	-webkit-box-align: center!important;
+	align-items: center!important;
+	justify-content: center!important;
+	flex-direction:row!important;
+}
+.transparency-blend {
+    mix-blend-mode: difference;
+}
