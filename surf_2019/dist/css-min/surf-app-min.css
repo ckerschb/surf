@@ -250,6 +250,10 @@ footer .row {
 	background-image: url(/surf_2019/dist/img/thyla.jpeg)
 }
 
+.benj {
+  background-image: url("/surf_2019/dist/img/benjamin.jpeg");
+}
+
 @media screen and (max-width:850px) {
 	h1 {
 		font-size: 2.7rem

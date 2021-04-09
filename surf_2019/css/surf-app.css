@@ -259,6 +259,9 @@ footer .row {
   background-image: url("/surf_2019/dist/img/thyla.jpg");
 }
 
+.benj {
+  background-image: url("/surf_2019/dist/img/benjamin.jpeg");
+}
 
 @media screen and (max-width: 850px) {
   h1 {
