@@ -254,6 +254,14 @@ footer .row {
   background-image: url("/surf_2019/dist/img/benjamin.jpeg");
 }
 
+.johns {
+  background-image: url("/surf_2019/dist/img/jschanck.jpg");
+}
+
+.dennisj {
+  background-image: url("/surf_2019/dist/img/dennisj.jpg");
+}
+
 @media screen and (max-width:850px) {
 	h1 {
 		font-size: 2.7rem
