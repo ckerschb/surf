@@ -1,0 +1,385 @@
+<html lang="en">
+  <head>
+    <link href="https://code.cdn.mozilla.net/fonts/zilla-slab.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./../../../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta charset="utf-8"/>
+    <meta name="description" content="Mozilla Security Research Summit San Diego 2025"/>
+    <title>Mozilla Security Research Summit, San Diego 2025</title>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+    <link href="./css/sandiego.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <header class="flx-cntr">
+      <div class="row flx-cntr logo-nav-wrap">
+        <a aria-label="Mozilla" href="https://www.mozilla.org" rel="noopener" target="_blank" class="moz-logo">
+        </a>
+        <nav>
+          <a class="nav-link" href="#venue">Venue</a>
+          <a class="nav-link" href="#speakers">Speakers</a>
+          <a class="nav-link" href="#agenda">Agenda</a>
+          <a class="nav-link" rel="noopener noreferrer" href="https://surf.mozilla.org">SURF</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bg-img">
+      <div class="row">
+        <h1 class="bg-white">
+          Mozilla Security Research Summit 2025
+        </h1>
+        <div>
+          <div class="date-time-info">
+            <span class="date-time">March 1, 2025</span>
+            <span class="date-time">9:00am - 6:00pm</span>
+            <span class="date-time">San Diego, California</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="callout bg-white">
+          <p class="bold">The Mozilla Security Research summit will be hosted in San Diego as part of Mozilla's Security Engineering University Relationship Framework (SURF) initiative. This initiative aims to increase collaboration between Mozilla and the academic community, so as to leverage academic talent to help explore Mozilla-specific security and privacy engineering research problems, and to strengthen Mozilla's ties to the academic community.
+          </p>
+          <p class="par-space">
+            The summit audience will consist of a mix of Mozilla engineers, academics, and PhD students. Our intention is for Mozilla engineers to "pitch" research problems to the academic community, so as to spark potential collaboration. Our engineers and researchers plan to deliver talks covering areas such as tracking protection, language-based security, cryptography, web measurement and machine learning. 
+          </p>
+          <p class="par-space">
+            The day will also include some high-caliber talks from security and privacy academics, as well as some fast-paced PhD lightning talks. The event will include ample time for discussion throughout the day and will conclude with a panel discussion.
+          </p>
+          <p class="par-space">
+            Please join us to help improve the open web!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- venue -->
+    <section id="venue" class="venue bg-light">
+      <div class="row venue-wrap">
+        <h2 class="venue-headline">Venue</h2>
+
+        <!-- address callout -->
+        <div class="rel">
+          <div id="map"></div>
+          <div id="address">
+            <span class="bold">University of California San Diego</span>
+            <span>3235 Voigt Dr.</span>
+            <span class="add-block-end-space">La Jolla, CA 92094</span>
+            <span>Computer Science & Engineering Building</span>
+            <span>Room 1242</span>
+          </div>
+        </div>
+
+        <!-- the map -->
+        <script>
+          mapboxgl.accessToken="pk.eyJ1IjoibGVzbGV5bm9ydG9uMTIyIiwiYSI6ImNtMmMxYmNtMTBibzUybnB6MTV3NjI3amUifQ.6kHLh-Uz34lntYfFV14l7A";const map=new mapboxgl.Map({container:"map",center:[-117.150807,32.720439],zoom:11,maxZoom:13,minZoom:11,style:{version:8,name:"SURF",metadata:{"mapbox:autocomposite":!0,"mapbox:thumb":"data:image/webp;base64,UklGRj4GAABXRUJQVlA4TDIGAAAvO8AOAH+ioI0k5fy7feY/fJCgsG3bJv9/u5NOKWzbtsn/3+6kU/NvNm0bsiat7kCI4BkUAOJHcoBuEO0hAIQhKGL/b5xjvQcBAhSUagi8mXEOpwoebNtW22rbtjvaay7coEuyZDsGJbmv0MXMzHzVvzw3RL5KENH/CVhefHNfpyImAokiRML9prjSsO1FohhEiUgCwt0K7z2fsqiSFtUcViKKRmau9YpArDDqxCGk8rJlGZDls2++XtRcmURaRFZmAZjVPn4DgLsy6GqNa2T+/MMPC4PZNNcxh5q6mOcocdwmRWnuTLTGOdfGrmoebiRvHFVcDGaac4ncS8vbXXGmbo2l5iKiFq5CiQo7Q11NxGuJUtp1v2kgMK3wvJR+MImweOeNNz7+YKy9QNTcwsNzrl/O1wObJomXPD7fPTwv+zxFuBqYQAUQSarmodnN2xu9CpGyyUseHu4fHm5GHQqLUEKGFgEgouau2fw/YUQWWl5yPp1P561oyc1NhZmlZ1FTM42QUHeDQKx4FH/Jfz1gDs5QERVmy6LZzELD3D0oJaSmboQVbpZrn6ppE1ZuLemkWiTMxdWd1bsrFY4W7isst4fdvGu70YWxndlvj/N+mSdLIWpgtcTCvnv9frPGohwgSjl13Tjwdru9Ph4OzTgLlMBxfO/VG2wt6QqbwbwCrtGDzVsV0b6NY1/YmJWLEYEImuVF73/06fNdmUshhkUpYx1zzpHbkBs89/ttzwmWuhDoi5ZrMElLBCEJVY3jPB+0DJuq3qzOm+pI2p7BKi87cUqoBgCcuZJcT8ed9W3om0+TTBtHpNSOnJBetswpEfXEIkxRj6mB2arbMJbPf+L9MQNJhQGiFZaGBG7CAA3DgXtxV8kx72IMFfV3Xn3ckbglrLGosDYwC5XmVNQAyX2pZUQaNuMQkhK5gtd47/48Hc7vQYAIxrB95/rxecwVcKRtu22glKgUq2v89usvbx6nIy2vPtxYeKul7zM3I5TwICRQohQemzXefu/13bipxClynYbRGouYW6m9qgKUqEsc0vIay3wY89CEtbbimTUzMWh3+zgLOIGIE+USta1yvdnPbWw5igE5HW4BdJSSBFHXpdRxx6Ju4xpvfv792wzreb576jt77at3HxhEkjcR1iVlECmZma/y1Qd3xErFOZjSse+DUe/222ULtchZXIkpgddYKkEMlLINLikUCREECoCIzD0slWyWVgmmtjsfX98+ngLJi3DRjpCMJES8eFaLbHS1SqXhetm/+eff3/z19y/e92E4TaetRyJRbTV7rtkezmmVnncnvro6LKMdXJtVlt3x5hWHE/a5tKE2NRCts7FTe/OqQzuUIVtwTSDU3SCWp6GU/Tw36ToCrXLI52kX9i9sb/d1Y50n4us3v727L6d5e73cnW/PIxETVlnK/rjcv31/97gs52moearw/pV9K8X97tXz7c2ZmE10nem4/Of+zdOyPO/P824nhAyhVBCExEjqVdM61+f/snzzuCyLOyfnCCgJO3NHHSdYFnTr/J/zspyl6jgECcAM7sEgguSaEy701g/LUuaaqJgJwBBkYRWY1Qq90P3jedl+8euXP/60QIRAjFCi1nWUa8SFltP1slQHKGUWJjAVFh6n0SRqu9SyOS/XORHw9AmLEFMm5n02z6Vcbl6W88AEihkQECmITmFhZaoX2x2WZeNERJmlIyJPqcu1lRxjfzlblqMDCYbUJSLrOrbchqEfxosdMB36LMoIM+VESuLZy9A2fbvYqWNlhwBZlZkpXMEWte//CZIotWfG/iMXRuqSmgos9630/4A7SXTT3KYc7/774a2HMhhIPZdhvtgyHEdK1KoHUz/4ZiYOFuJxng6Xm/rCjNvvDl++cQCVvp+fDkPtC65P/eV2nn26+agf9nNrM5dFnkZ3Vz09DZc7DdO0qSPrL3/8/vNHKL3XbFcQuNnlDggOAjC89fYyi1pxiJhKAl1ul5y4IrFY3YxDP4/izYkExpfbBkM4E3shziXyJlyUiJn1cgfvAEIRcWMRrrYxNhFjtss95JS4SwgyV5Wm7r2DOZT4cjcHogSiMBKTiZmkVqAMgnS520YJIObsOWdlJnhjGXuAAQ==","mapbox:uiParadigm":"imports","mapbox:sdk-support":{js:"3.8.0",android:"11.8.0",ios:"11.8.0"},"mapbox:groups":{"Point of interest labels, poi-labels":{collapsed:!1,name:"Point of interest labels, poi-labels"},"Place labels, place-labels":{collapsed:!1,name:"Place labels, place-labels"}},"mapbox:decompiler":{id:"cm2c1g3bs000601pdc5j7fnl3",strata:[{id:"cm2c1g3bs000601pdc5j7fnl3",order:[["point-of-interest-labels","poi-labels"],["place-labels","place-labels"]]}],overrides:{"place-labels":{"settlement-subdivision-label":{paint:{"text-halo-color":{remove:!0},"text-halo-blur":{remove:!0},"text-halo-width":{remove:!0},"text-color":"hsl(0, 1%, 16%)"},layout:{"text-font":["DIN Pro Bold","Arial Unicode MS Regular"]}},"settlement-major-label":{paint:{"text-halo-color":{remove:!0},"text-halo-width":{remove:!0},"text-halo-blur":{remove:!0},"text-color":["step",["get","symbolrank"],"hsl(0, 1%, 0%)",11,"hsl(0, 0%, 0%)",16,"hsl(0, 0%, 0%)"]}},"settlement-minor-label":{paint:{"text-halo-color":{remove:!0},"text-color":["interpolate",["linear"],["get","symbolrank"],0,"rgb(163, 163, 163)",11,"rgb(130, 130, 130)",16,"hsl(0, 2%, 0%)"]}}},"point-of-interest-labels":{"poi-label":{paint:{"text-halo-color":{remove:!0},"text-halo-width":{remove:!0},"text-halo-blur":{remove:!0},"icon-opacity":.42,"text-color":"hsl(0, 0%, 39%)"},layout:{"icon-text-fit":{remove:!0}}}}},components:{"place-labels":"18.0.0","point-of-interest-labels":"18.0.0"},propConfig:{"place-labels":{colorBase:"hsla(0, 0%, 0%, 0.61)"},"point-of-interest-labels":{density:0,poiIconScale:.8,poiIconBackground:"None",colorBase:"hsla(0, 0%, 0%, 0.61)"}}},"mapbox:uiExpandedImports":["basemap"]},center:[-117.1508066518736,32.720439057873094],zoom:10.012550917772488,bearing:0,pitch:0,terrain:null,imports:[{id:"basemap",url:"mapbox://styles/mapbox/standard",config:{theme:"monochrome",lightPreset:"day"}}],sources:{composite:{url:"mapbox://mapbox.mapbox-streets-v8",type:"vector"}},sprite:"mapbox://sprites/lesleynorton122/cm2c1g3bs000601pdc5j7fnl3/6igj8cob2t0hwabpeotavznwh",glyphs:"mapbox://fonts/mapbox/{fontstack}/{range}.pbf",projection:{name:"globe"},layers:[{id:"poi-label",type:"symbol",metadata:{"mapbox:featureComponent":"point-of-interest-labels","mapbox:group":"Point of interest labels, poi-labels"},source:"composite","source-layer":"poi_label",minzoom:6,filter:["all",["<=",["get","filterrank"],["+",["step",["zoom"],0,16,1,17,2],0]],["step",["pitch"],!0,50,["<",["distance-from-center"],2],60,["<",["distance-from-center"],2.5],70,["<",["distance-from-center"],3]]],layout:{"text-size":["step",["zoom"],["step",["get","sizerank"],18,5,12],17,["step",["get","sizerank"],18,13,12]],"icon-image":["case",["has","maki_beta"],["coalesce",["image",["get","maki_beta"]],["image",["get","maki"]]],["image",["get","maki"]]],"text-font":["DIN Pro Medium","Arial Unicode MS Regular"],"text-offset":["step",["zoom"],["step",["get","sizerank"],["literal",[0,0]],5,["literal",[0,.55]]],17,["step",["get","sizerank"],["literal",[0,0]],13,["literal",[0,.55]]]],"text-anchor":["step",["zoom"],["step",["get","sizerank"],"center",5,"top"],17,["step",["get","sizerank"],"center",13,"top"]],"text-field":["coalesce",["get","name_en"],["get","name"]]},paint:{"icon-opacity":.42,"text-color":"hsl(0, 0%, 39%)"}},{id:"settlement-subdivision-label",type:"symbol",metadata:{"mapbox:featureComponent":"place-labels","mapbox:group":"Place labels, place-labels"},source:"composite","source-layer":"place_label",minzoom:10,maxzoom:15,filter:["all",["match",["get","class"],["settlement_subdivision","disputed_settlement_subdivision"],["match",["get","worldview"],["all","US"],!0,!1],!1],["<=",["get","filterrank"],4],["step",["pitch"],!0,50,["<",["distance-from-center"],3],60,["<",["distance-from-center"],4],70,["<",["distance-from-center"],5]]],layout:{"text-field":["coalesce",["get","name_en"],["get","name"]],"text-transform":"uppercase","text-font":["DIN Pro Bold","Arial Unicode MS Regular"],"text-letter-spacing":["match",["get","type"],"suburb",.15,.05],"text-max-width":7,"text-padding":3,"text-size":["interpolate",["cubic-bezier",.5,0,1,1],["zoom"],11,["match",["get","type"],"suburb",11,10.5],15,["match",["get","type"],"suburb",15,14]]},paint:{"text-color":"hsl(0, 1%, 16%)"}},{id:"settlement-minor-label",type:"symbol",metadata:{"mapbox:featureComponent":"place-labels","mapbox:group":"Place labels, place-labels"},source:"composite","source-layer":"place_label",minzoom:2,maxzoom:13,filter:["all",["<=",["get","filterrank"],3],["match",["get","class"],["settlement","disputed_settlement"],["match",["get","worldview"],["all","US"],!0,!1],!1],["step",["zoom"],[">",["get","symbolrank"],6],4,[">=",["get","symbolrank"],7],6,[">=",["get","symbolrank"],8],7,[">=",["get","symbolrank"],10],10,[">=",["get","symbolrank"],11],11,[">=",["get","symbolrank"],13],12,[">=",["get","symbolrank"],15]],["step",["pitch"],!0,50,["<",["distance-from-center"],3],60,["<",["distance-from-center"],4],70,["<",["distance-from-center"],5]]],layout:{"text-line-height":1.1,"text-size":["interpolate",["cubic-bezier",.2,0,.9,1],["zoom"],3,["step",["get","symbolrank"],11,9,10],6,["step",["get","symbolrank"],14,9,12,12,10],8,["step",["get","symbolrank"],16,9,14,12,12,15,10],13,["step",["get","symbolrank"],22,9,20,12,16,15,14]],"text-radial-offset":["step",["zoom"],["match",["get","capital"],2,.6,.55],8,0],"symbol-sort-key":["get","symbolrank"],"icon-image":["step",["zoom"],["case",["==",["get","capital"],2],"border-dot-13",["step",["get","symbolrank"],"dot-11",9,"dot-10",11,"dot-9"]],8,""],"text-font":["DIN Pro Regular","Arial Unicode MS Regular"],"text-justify":"auto","text-anchor":["step",["zoom"],["get","text_anchor"],8,"center"],"text-field":["coalesce",["get","name_en"],["get","name"]],"text-max-width":7},paint:{"text-color":["interpolate",["linear"],["get","symbolrank"],0,"rgb(163, 163, 163)",11,"rgb(130, 130, 130)",16,"hsl(0, 2%, 0%)"],"text-halo-width":1,"text-halo-blur":1}},{id:"settlement-major-label",type:"symbol",metadata:{"mapbox:featureComponent":"place-labels","mapbox:group":"Place labels, place-labels"},source:"composite","source-layer":"place_label",minzoom:2,maxzoom:15,filter:["all",["<=",["get","filterrank"],3],["match",["get","class"],["settlement","disputed_settlement"],["match",["get","worldview"],["all","US"],!0,!1],!1],["step",["zoom"],!1,2,["<=",["get","symbolrank"],6],4,["<",["get","symbolrank"],7],6,["<",["get","symbolrank"],8],7,["<",["get","symbolrank"],10],10,["<",["get","symbolrank"],11],11,["<",["get","symbolrank"],13],12,["<",["get","symbolrank"],15],13,[">=",["get","symbolrank"],11],14,[">=",["get","symbolrank"],15]],["step",["pitch"],!0,50,["<",["distance-from-center"],3],60,["<",["distance-from-center"],4],70,["<",["distance-from-center"],5]]],layout:{"text-line-height":1.1,"text-size":["interpolate",["cubic-bezier",.2,0,.9,1],["zoom"],3,["step",["get","symbolrank"],13,6,11],6,["step",["get","symbolrank"],18,6,16,7,14],8,["step",["get","symbolrank"],20,9,16,10,14],15,["step",["get","symbolrank"],24,9,20,12,16,15,14]],"text-radial-offset":["step",["zoom"],["match",["get","capital"],2,.6,.55],8,0],"symbol-sort-key":["get","symbolrank"],"icon-image":["step",["zoom"],["case",["==",["get","capital"],2],"border-dot-13",["step",["get","symbolrank"],"dot-11",9,"dot-10",11,"dot-9"]],8,""],"text-font":["DIN Pro Medium","Arial Unicode MS Regular"],"text-justify":["step",["zoom"],["match",["get","text_anchor"],["left","bottom-left","top-left"],"left",["right","bottom-right","top-right"],"right","center"],8,"center"],"text-anchor":["step",["zoom"],["get","text_anchor"],8,"center"],"text-field":["coalesce",["get","name_en"],["get","name"]],"text-max-width":7},paint:{"text-color":["step",["get","symbolrank"],"hsl(0, 1%, 0%)",11,"hsl(0, 0%, 0%)",16,"hsl(0, 0%, 0%)"]}},{id:"state-label",type:"symbol",metadata:{"mapbox:featureComponent":"place-labels","mapbox:group":"Place labels, place-labels"},source:"composite","source-layer":"place_label",minzoom:3,maxzoom:9,filter:["all",["match",["get","class"],["state","disputed_state"],["match",["get","worldview"],["all","US"],!0,!1],!1],["step",["pitch"],!0,50,["<",["distance-from-center"],3],60,["<",["distance-from-center"],4],70,["<",["distance-from-center"],5]]],layout:{"text-size":["interpolate",["cubic-bezier",.85,.7,.65,1],["zoom"],4,["step",["get","symbolrank"],9,6,8,7,7],9,["step",["get","symbolrank"],21,6,16,7,14]],"text-transform":"uppercase","text-font":["DIN Pro Bold","Arial Unicode MS Bold"],"text-field":["coalesce",["get","name_en"],["get","name"]],"text-letter-spacing":.15,"text-max-width":6},paint:{"text-color":"hsla(0, 0%, 64%, 0.61)","text-halo-color":"hsla(0, 0%, 0%, 0.61)","text-halo-width":1,"text-opacity":.5}},{id:"country-label",type:"symbol",metadata:{"mapbox:featureComponent":"place-labels","mapbox:group":"Place labels, place-labels"},source:"composite","source-layer":"place_label",minzoom:1,maxzoom:10,filter:["all",["match",["get","class"],["country","disputed_country"],["match",["get","worldview"],["all","US"],!0,!1],!1],["step",["pitch"],!0,50,["<",["distance-from-center"],3],60,["<",["distance-from-center"],4],70,["<",["distance-from-center"],5]]],layout:{"icon-image":"","text-field":["coalesce",["get","name_en"],["get","name"]],"text-line-height":1.1,"text-max-width":6,"text-font":["DIN Pro Medium","Arial Unicode MS Regular"],"text-radial-offset":["step",["zoom"],.6,8,0],"text-justify":["step",["zoom"],["match",["get","text_anchor"],["left","bottom-left","top-left"],"left",["right","bottom-right","top-right"],"right","center"],7,"auto"],"text-size":["interpolate",["cubic-bezier",.2,0,.7,1],["zoom"],1,["step",["get","symbolrank"],11,4,9,5,8],9,["step",["get","symbolrank"],22,4,19,5,17]]},paint:{"icon-opacity":["step",["zoom"],["case",["has","text_anchor"],1,0],7,0],"text-color":"hsla(0, 0%, 38%, 0.61)","text-halo-color":"hsla(0, 0%, 0%, 0.61)","text-halo-width":1.25}},{id:"continent-label",type:"symbol",metadata:{"mapbox:featureComponent":"place-labels","mapbox:group":"Place labels, place-labels"},source:"composite","source-layer":"natural_label",minzoom:.75,maxzoom:3,filter:["==",["get","class"],"continent"],layout:{"text-field":["coalesce",["get","name_en"],["get","name"]],"text-line-height":1.1,"text-max-width":6,"text-font":["DIN Pro Medium","Arial Unicode MS Regular"],"text-size":["interpolate",["exponential",.5],["zoom"],0,10,2.5,15],"text-transform":"uppercase","text-letter-spacing":.05},paint:{"text-color":"hsla(0, 0%, 38%, 0.61)","text-halo-color":"hsla(0, 0%, 0%, 0.61)","text-halo-width":1.5,"text-opacity":["interpolate",["linear"],["zoom"],0,.8,1.5,.5,2.5,0]}}],created:"2024-10-16T15:39:59.320Z",modified:"2024-10-18T15:23:27.611Z",id:"cm2c1g3bs000601pdc5j7fnl3",owner:"lesleynorton122",visibility:"public",protected:!1,draft:!1}}),marker1=new mapboxgl.Marker({color:"#000000"}).setLngLat([-117.150807,32.720439]).addTo(map);
+        </script>
+      </div>
+    </section>
+
+    <section id="agenda" class="bg-dark">
+      <div class="row">
+        <h2>Agenda</h2>
+        <div id="time-slots" class="three-up">
+          <template>
+            <div class="talk-section">
+              <h3 class="time"></h3>
+              <h4 class="talk-title"></h4>
+              <ul class="agenda-speaker-list">
+                <li></li>
+              </ul>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <script>
+        const talks = [
+          {
+            time: "9:30-10:00",
+            title: "Registration",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "10:00-10:10",
+            title: "Welcome",
+            description: "",
+            speakers: [
+              {
+                name: "Christoph Kerschbaumer",
+                affiliation: "(Mozilla)"
+              }
+            ]
+          },
+          {
+            time: "10:10-10:30",
+            title: "Example agenda item",
+            description: "With a descriptive example of an agenda description",
+            speakers: [
+              {
+                name: "Christoph Kerschbaumer",
+                affiliation: "(Mozilla)"
+              },
+              {
+                name: "Another speaker",
+                affiliation: "(Mozilla)"
+              }
+            ],
+          },
+          {
+            time: "10:30-10:50",
+            title: "TBA",
+            description: "",
+            speakers: [],
+          },
+          {
+            time: "10:50-11:20",
+            title: "TBA",
+            description: "",
+            speakers: [],
+          },
+          {
+            time: "11:20-11:50",
+            title: "TBA",
+            description: "",
+            speakers: [],
+          },
+          {
+            time: "11:50-12:10",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "12:10-12:30",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "12:30-14:00",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "14:00-14:30",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "14:30-15:00",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "15:00-15:30",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "15:30-15:50",
+            title: "TBA",
+            description: "",
+            speakers: [],
+            
+          }
+        ];
+
+        const timeSlots = document.getElementById("time-slots");
+        const temp = document.getElementsByTagName("template")[0];
+        const timeSlotSection = temp.content.querySelector("div.talk-section");
+        const timeSlot = temp.content.querySelector("h3");
+        const talkTitle = temp.content.querySelector("h4");
+        const timeSlotSpeakers = temp.content.querySelector("ul");
+
+        const createSpan = (txt, className) => {
+          const span = document.createElement("span");
+          span.classList = [className];
+          span.textContent = txt;
+          return span;
+        }
+
+        talks.forEach(talk => {
+          const timeSlotCopy = document.importNode(timeSlotSection, true)
+          timeSlot.textContent = talk.time;
+          talkTitle.textContent = talk.title;
+          
+
+          // Clean up so that we don't carry over speakers from 
+          // one talk to the next
+          while (timeSlotSpeakers.firstChild) {
+            timeSlotSpeakers.firstChild.remove();
+          }
+
+          talk.speakers.forEach(speaker => {
+            const li = document.createElement("li");
+            li.appendChild(createSpan(speaker.name, "agenda-speaker-name bold"));
+            li.appendChild(createSpan(speaker.affiliation, "affiliation"));
+            timeSlotSpeakers.appendChild(li);
+          });
+
+          timeSlotCopy.appendChild(createSpan(talk.description, "description"))
+
+          timeSlots.appendChild(timeSlotCopy);
+        });
+
+      </script>
+    </section>
+
+    <section id="speakers" class="speakers">
+      <div class="row">
+        <h2>Speakers</h2>
+      </div>
+      <div class="row two-up">
+        <div class="speaker">
+          <div class="speaker-image kersch bg-img"><!--portrait--></div>
+          <h4 class="speaker-name">
+            <a class="speaker-name-link" rel="noopner noreferrer" target="_blank" href="https://www.christophkerschbaumer.com/">Christoph Kerschbaumer</a>
+          </h4>
+          <h5 class="speaker-title">Content Security Tech Lead</h5>
+          <h6 class="speaker-affiliation">Mozilla</h6>
+          <p class="speaker-bio">
+            Christoph is the Content Security Tech Lead at Mozilla with over 10 years of experience in Secure Systems Development. His work ranges from designing systems with fail safe defaults to fighting cross site scripting as well as preventing man-in-the-middle attacks. He received his PhD in Computer Science from the University of California, Irvine where he based his research on information flow tracking techniques within web browsers.
+          </p>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:ckerschbaumer@mozilla.com" class="speaker-contact">Contact</a>
+        </div>
+
+        <div class="speaker">
+          <div class="speaker-image beurdouche bg-img"><!--portrait--></div>
+          <h4 class="speaker-name">
+            <a class="speaker-name-link" rel="noopner noreferrer" target="_blank">Benjamin Beurdouche</a></h4>
+          <h5 class="speaker-title">Security Researcher</h5>
+          <h6 class="speaker-affiliation">Mozilla</h6>
+          <p class="speaker-bio">
+            Benjamin is a security researcher working on formal methods for cryptographic primitives and security protocols. He worked on the design and security analysis of TLS and currently is a co-author of the Messaging Layer Security (MLS) protocol at the IETF, and the HACL* cryptographic library which is part of Project Everest.           
+          </p>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:bbeurdouche@mozilla.com" class="speaker-contact">Contact</a>
+        </div>
+
+        <div class="speaker">
+          <div class="speaker-image weine bg-img"><!--portrait--></div>
+          <h4 class="speaker-name">Anna Weine</h4>
+          <h5 class="speaker-title">Security Researcher</h5>
+          <h6 class="speaker-affiliation">Mozilla</h6>
+          <p class="speaker-bio">
+            Anna is a security researcher working on cryptography. She has a particular interest in asymmetric cryptography, side-channel analysis and fault injection countermeasures, and formal verification. Anna received her PhD in Cryptography from the University PSL, prepared at ENS Ulm & Inria.           </p>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:anna.weine@mozilla.com" class="speaker-contact">Contact</a>
+        </div>
+
+        <div class="speaker">
+          <div class="speaker-image schanck bg-img"><!--portrait--></div>
+          <h4 class="speaker-name">
+            <a class="speaker-name-link" rel="noopner noreferrer" target="_blank" href="https://jmschanck.info/">John Schanck</a></h4>
+          <h5 class="speaker-title">Security Researcher</h5>
+          <h6 class="speaker-affiliation">Mozilla</h6>
+          <p class="speaker-bio">
+            John is a cryptography engineer on the Network Security Services team at Mozilla. He has done extensive work on mitigating the threat to Internet security that is posed by quantum computers. In particular he is a co-author of the NTRU and Kyber key encapsulation mechanisms, both of which are finalists in NIST's post-quantum cryptography standardization effort. John received his PhD in Mathematics from the department of Combinatorics and Optimization at the University of Waterloo.           </p>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:jschanck@mozilla.com" class="speaker-contact">Contact</a>
+        </div>
+
+        <div class="speaker">
+          <div class="speaker-image jackson bg-img"><!--portrait--></div>
+          <h4 class="speaker-name">Dennis Jackson</h4>
+          <h5 class="speaker-title">Security Researcher</h5>
+          <h6 class="speaker-affiliation">Mozilla</h6>
+          <p class="speaker-bio">
+            Dennis’ research interests include applied cryptography, protocol design and formal verification. His work includes clarifying the precise security properties of Ed25519, formally verifying the security of the Noise key exchange framework, and discovering new attacks on deployed protocols like Secure Scuttlebutt’s authenticated transport. He is also a Core Contributor at the Tor Project, where he works with the Network Health team. 
+          </p>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:djackson@mozilla.com" class="speaker-contact">Contact</a>
+        </div>
+
+        <div class="speaker">
+          <div class="speaker-image vandersloot bg-img"><!--portrait--></div>
+          <h4 class="speaker-name">Benjamin VanderSloot</h4>
+          <h5 class="speaker-title">Privacy Researcher</h5>
+          <h6 class="speaker-affiliation">Mozilla</h6>
+          <p class="speaker-bio">
+            Ben is an engineer on the Privacy & Protections team at Mozilla. His research interests focus on privacy harms and experiences of users on the Web. Ben received his PhD in Computer Science and Engineering from the University of Michigan.           </p>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:bvandersloot@mozilla.com" class="speaker-contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="participants" class="bg-light rel">
+      <div class="dino"></div>
+      <div class="row">
+        <h2 class="participants-headline">Participants</h2>
+        <ul id="participants-list">
+          <li>Christoph Kerschbaumer (Mozilla)</li>
+          <li>Lars Eggert (Mozilla)</li>
+          <li>Dennis Jackson (Mozilla)</li>
+          <li>John Schanck (Mozilla)</li>
+          <li>Andrew Creskey (Mozilla)</li>
+          <li>Valentin Gosu (Mozilla)</li>
+          <li>Brian Grinstead (Mozilla)</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="three-up moz-logo-wrap">
+          <a aria-label="Mozilla" class="footer-moz-logo" href="https://www.mozilla.org">
+          </a>
+        </div>
+        <ul class="three-up">
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="">Mozilla</a>
+          </li>
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/about/">About</a>
+          </li>
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://blog.mozilla.org/">Blog</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/contact/">Contact Us</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://donate.mozilla.org/?presets=50,30,20,10&amount=30&utm_source=mozilla.org&utm_medium=referral&utm_content=footer&currency=usd">Donate</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/about/governance/policies/participation/">Code of Conduct</a>
+          </li>
+        </ul>
+
+        <ul class="three-up">
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/new/?redirect_source=firefox-com">Firefox</a>
+          </li>    
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/new/">Download Firefox</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/">Desktop</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/mobile/">Mobile</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/features/">Features</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/channel/desktop/">Beta, Nightly, Developer Edition</a>
+          </li>                
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
