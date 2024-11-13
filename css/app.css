@@ -798,6 +798,10 @@ a.flx-third:hover {
   background-image: url("https://d24wuq6o951i2g.cloudfront.net/img/events/id/314/3143226/assets/c.H.dc.photo-1517484030358-fd0cca3d33d0")
 }
 
+.sandiego {
+  background-image: url("https://surf.mozilla.org/events/2025/sandiego/img/sandiego.jpg")
+}
+
 #summits,
 #talks {
   background: rgba(0, 0, 0, .9);
