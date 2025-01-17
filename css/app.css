@@ -557,8 +557,11 @@ h3 {
   background-image: url("/surf_2019/dist/img/andrew.png");
 }
 
+.vandersloot {
+  background-image: url("/surf_2019/dist/img/vandersloot.png");
+}
+
 .beurdouche,
-.vandersloot,
 .anna {
   background-image: url("/events/2025/sandiego/img/dino.svg");
   opacity: .2;
