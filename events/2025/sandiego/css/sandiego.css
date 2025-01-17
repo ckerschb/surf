@@ -366,9 +366,11 @@ footer .row {
   background-image: url("/surf_2019/dist/img/franziskus.jpg");
 }
 
+.vandersloot {
+  background-image: url("/surf_2019/dist/img/vandersloot.jpg");
+}
 
 .beurdouche,
-.vandersloot,
 .weine,
 .dino {
   background-image: url("../img/dino.svg");
