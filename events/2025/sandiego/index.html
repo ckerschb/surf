@@ -20,8 +20,8 @@
         </a>
         <nav>
           <a class="nav-link" href="#venue">Venue</a>
-          <a class="nav-link" href="#speakers">Speakers</a>
           <a class="nav-link" href="#agenda">Agenda</a>
+          <a class="nav-link" href="#participants">Participants</a>
           <a class="nav-link" rel="noopener noreferrer" href="https://surf.mozilla.org">SURF</a>
         </nav>
       </div>
@@ -130,7 +130,7 @@
           },
           {
             time: "10:30-10:50",
-            title: "The Web PKI",
+            title: "Certificate Transparency++",
             description: "",
             speakers: [
               {
@@ -141,9 +141,14 @@
           },
           {
             time: "10:50-11:20",
-            title: "TBA",
+            title: "What Bothers me about the Web",
             description: "",
-            speakers: [],
+            speakers: [
+              {
+                name: "Benjamin VanderSloot",
+                affiliation: "(Mozilla)"
+              },
+            ],
           },
           {
             time: "11:20-11:50",
@@ -241,58 +246,6 @@
         });
 
       </script>
-    </section>
-
-    <section id="speakers" class="speakers">
-      <div class="row">
-        <h2>Speakers</h2>
-      </div>
-      <div class="row two-up">
-        <div class="speaker">
-          <div class="speaker-image kersch bg-img"><!--portrait--></div>
-          <h4 class="speaker-name">
-            <a class="speaker-name-link" rel="noopner noreferrer" target="_blank" href="https://www.christophkerschbaumer.com/">Christoph Kerschbaumer</a>
-          </h4>
-          <h5 class="speaker-title">Manager, Security Engineering</h5>
-          <h6 class="speaker-affiliation">Mozilla</h6>
-          <p class="speaker-bio">
-            Christoph has over two decades of experience in software engineering and computer security. His work ranges from designing secure systems with fail-safe defaults to fighting cross-site scripting to preventing man-in-the-middle attacks. He received his PhD in Computer Science from the University of California, Irvine, where he focused his research on information flow tracking techniques within web browsers.
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="mailto:ckerschbaumer@mozilla.com" class="speaker-contact">Contact</a>
-        </div>
-
-        <div class="speaker">
-          <div class="speaker-image schanck bg-img"><!--portrait--></div>
-          <h4 class="speaker-name">
-            <a class="speaker-name-link" rel="noopner noreferrer" target="_blank" href="https://jmschanck.info/">John Schanck</a></h4>
-          <h5 class="speaker-title">Security Researcher</h5>
-          <h6 class="speaker-affiliation">Mozilla</h6>
-          <p class="speaker-bio">
-            John is a cryptography engineer on the Network Security Services team at Mozilla. He has done extensive work on mitigating the threat to Internet security that is posed by quantum computers. In particular he is a co-author of the NTRU and Kyber key encapsulation mechanisms, both of which are finalists in NIST's post-quantum cryptography standardization effort. John received his PhD in Mathematics from the department of Combinatorics and Optimization at the University of Waterloo.           </p>
-          <a target="_blank" rel="noopener noreferrer" href="mailto:jschanck@mozilla.com" class="speaker-contact">Contact</a>
-        </div>
-
-        <div class="speaker">
-          <div class="speaker-image jackson bg-img"><!--portrait--></div>
-          <h4 class="speaker-name">Dennis Jackson</h4>
-          <h5 class="speaker-title">Security Researcher</h5>
-          <h6 class="speaker-affiliation">Mozilla</h6>
-          <p class="speaker-bio">
-            Dennis’ research interests include applied cryptography, protocol design and formal verification. His work includes clarifying the precise security properties of Ed25519, formally verifying the security of the Noise key exchange framework, and discovering new attacks on deployed protocols like Secure Scuttlebutt’s authenticated transport. He is also a Core Contributor at the Tor Project, where he works with the Network Health team. 
-          </p>
-          <a target="_blank" rel="noopener noreferrer" href="mailto:djackson@mozilla.com" class="speaker-contact">Contact</a>
-        </div>
-
-        <div class="speaker">
-          <div class="speaker-image vandersloot bg-img"><!--portrait--></div>
-          <h4 class="speaker-name">Benjamin VanderSloot</h4>
-          <h5 class="speaker-title">Privacy Researcher</h5>
-          <h6 class="speaker-affiliation">Mozilla</h6>
-          <p class="speaker-bio">
-            Ben is an engineer on the Privacy & Protections team at Mozilla. His research interests focus on privacy harms and experiences of users on the Web. Ben received his PhD in Computer Science and Engineering from the University of Michigan.           </p>
-          <a target="_blank" rel="noopener noreferrer" href="mailto:bvandersloot@mozilla.com" class="speaker-contact">Contact</a>
-        </div>
-      </div>
     </section>
 
     <section id="participants" class="bg-light rel">
