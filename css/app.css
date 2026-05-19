@@ -821,6 +821,10 @@ a.flx-third:hover {
   background-image: url("https://surf.mozilla.org/events/2025/sandiego/img/sandiego.jpg")
 }
 
+.delft {
+  background-image: url("https://surf.mozilla.org/events/2026/delft/img/delft.jpg")
+}
+
 #summits,
 #talks {
   background: rgba(0, 0, 0, .9);

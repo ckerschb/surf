@@ -1,0 +1,364 @@
+<html lang="en">
+  <head>
+    <link href="https://code.cdn.mozilla.net/fonts/zilla-slab.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./../../../favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta charset="utf-8"/>
+    <meta name="description" content="Mozilla Security Research Summit San Diego 2025"/>
+    <title>Mozilla Security Research Summit, San Diego 2025</title>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+    <link href="./css/delft.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <header class="flx-cntr">
+      <div class="row flx-cntr logo-nav-wrap">
+        <a aria-label="Mozilla" href="https://www.mozilla.org" rel="noopener" target="_blank" class="moz-logo">
+        </a>
+        <nav>
+          <a class="nav-link" href="#venue">Venue</a>
+          <a class="nav-link" href="#agenda">Agenda</a>
+          <a class="nav-link" href="#participants">Participants</a>
+          <a class="nav-link" rel="noopener noreferrer" href="https://surf.mozilla.org">SURF</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bg-img">
+      <div class="row">
+        <h1 class="bg-white">
+          Mozilla Security Research Summit 2026
+        </h1>
+        <div>
+          <div class="date-time-info">
+            <span class="date-time">November 20, 2026</span>
+            <span class="date-time">9:00am - 6:00pm</span>
+            <span class="date-time">Delft, Netherlands</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="callout bg-white">
+          <p class="par-space">The Mozilla Security Research Summit will take place in The Hague as part of Mozilla’s Security Engineering University Relationship Framework (SURF) initiative. SURF is designed to strengthen collaboration between Mozilla and the academic community by engaging academic talent in addressing Mozilla-specific security and privacy engineering challenges, while deepening our long-term research partnerships.
+          </p>
+          <p class="par-space">
+          The summit will bring together Mozilla engineers, academic researchers, and PhD students. A central goal of the event is for Mozilla engineers to present (“pitch”) open research problems to the academic community, fostering new collaborations and joint research efforts. Mozilla speakers will cover topics including tracking protection, language-based security, cryptography, web measurement, and machine learning.
+          </p>
+          <p class="par-space">
+          In addition, leading academics in security and privacy will deliver invited talks, providing broader research perspectives and insights. The program is designed to encourage active discussion throughout the day and will conclude with a networking dinner.
+          </p>
+          <p class="par-space">
+          We look forward to welcoming you to The Hague as we work together to advance security and privacy on the open web.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- venue -->
+    <section id="venue" class="venue bg-light">
+      <div class="row venue-wrap">
+        <h2 class="venue-headline">Venue</h2>
+
+        <!-- address callout -->
+        <div class="rel">
+          <div id="address">
+            <span class="bold">Delft University of Technology (TU Delft)</span>
+            <span >Postbus 5</span>
+            <span >2600 AA Delft</span>
+            <span >The Netherlands</span>
+            <span class="bold"><a href="https://www.tudelftcampus.nl/map">&rarr; Campus Map</a></span>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" class="bg-dark">
+      <div class="row">
+        <h2>Agenda</h2>
+        <div id="time-slots" class="three-up">
+          <template>
+            <div class="talk-section">
+              <h3 class="time"></h3>
+              <h4 class="talk-title"></h4>
+              <ul class="agenda-speaker-list">
+                <li></li>
+              </ul>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <script>
+        const talks = [
+          {
+            time: "8:30-09:00",
+            title: "Registration & Light Breakfast",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "09:00-09:15",
+            title: "Welcome & Agenda for the Day",
+            description: "",
+            speakers: [
+              {
+                name: "",
+                affiliation: ""
+              }
+            ]
+          },
+          {
+            time: "09:15-10:00",
+            title: "Intro Session I",
+            description: "",
+            speakers: [
+              {
+                name: "All Participants",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "10:00-10:15",
+            title: "Morning Coffee Break",
+            description: "",
+            speakers: [
+              {
+                name: "",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "10:15-11:00",
+            title: "Intro Session II",
+            description: "",
+            speakers: [
+              {
+                name: "All Participants",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "11:00-12:00",
+            title: "Mozilla Talks",
+            description: "",
+            speakers: [
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "12:00-13:00",
+            title: "Lunch",
+            description: "",
+            speakers: [
+              {
+                name: "",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "13:00-13:30",
+            title: "Lightning Talk Session I",
+            description: "",
+            speakers: [
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+                            {
+                name: "TBA",
+                affiliation: ""
+              },
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "13:30-14:30",
+            title: "Breakout Session I",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "14:30-15:00",
+            title: "Afternoon Coffee Break",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "15:00-15:30",
+            title: "Lightning Talk Session II",
+            description: "",
+            speakers: [
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+                            {
+                name: "TBA",
+                affiliation: ""
+              },
+              {
+                name: "TBA",
+                affiliation: ""
+              },
+            ],
+          },
+          {
+            time: "15:30-16:30",
+            title: "Breakout Session II",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "16:30-17:00",
+            title: "Closing Remarks",
+            description: "",
+            speakers: [],
+            
+          },
+          {
+            time: "17:00-18:00",
+            title: "Transfer to Dinner",
+            description: "",
+            speakers: [],
+          },
+          {
+            time: "18:00-21:00",
+            title: "Dinner",
+            description: "",
+            speakers: [],
+          },
+          {
+            time: "",
+            title: "",
+            description: "",
+            speakers: [],
+          },
+        ];
+
+        const timeSlots = document.getElementById("time-slots");
+        const temp = document.getElementsByTagName("template")[0];
+        const timeSlotSection = temp.content.querySelector("div.talk-section");
+        const timeSlot = temp.content.querySelector("h3");
+        const talkTitle = temp.content.querySelector("h4");
+        const timeSlotSpeakers = temp.content.querySelector("ul");
+
+        const createSpan = (txt, className) => {
+          const span = document.createElement("span");
+          span.classList = [className];
+          span.textContent = txt;
+          return span;
+        }
+
+        talks.forEach(talk => {
+          const timeSlotCopy = document.importNode(timeSlotSection, true)
+          timeSlot.textContent = talk.time;
+          talkTitle.textContent = talk.title;
+          
+
+          // Clean up so that we don't carry over speakers from 
+          // one talk to the next
+          while (timeSlotSpeakers.firstChild) {
+            timeSlotSpeakers.firstChild.remove();
+          }
+
+          talk.speakers.forEach(speaker => {
+            const li = document.createElement("li");
+            li.appendChild(createSpan(speaker.name, "agenda-speaker-name bold"));
+            li.appendChild(createSpan(speaker.affiliation, "affiliation"));
+            timeSlotSpeakers.appendChild(li);
+          });
+
+          timeSlotCopy.appendChild(createSpan(talk.description, "description"))
+
+          timeSlots.appendChild(timeSlotCopy);
+        });
+
+      </script>
+    </section>
+
+    <section id="participants" class="bg-light rel">
+      <div class="dino"></div>
+      <div class="row">
+        <h2 class="participants-headline">Participants</h2>
+        <ul id="participants-list">
+          <li>TBA</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="three-up moz-logo-wrap">
+          <a aria-label="Mozilla" class="footer-moz-logo" href="https://www.mozilla.org">
+          </a>
+        </div>
+        <ul class="three-up">
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/">Mozilla</a>
+          </li>
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/about/">About</a>
+          </li>
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://blog.mozilla.org/">Blog</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/contact/">Contact Us</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://donate.mozilla.org/?presets=50,30,20,10&amount=30&utm_source=mozilla.org&utm_medium=referral&utm_content=footer&currency=usd">Donate</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/about/governance/policies/participation/">Code of Conduct</a>
+          </li>
+        </ul>
+
+        <ul class="three-up">
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/new/?redirect_source=firefox-com">Firefox</a>
+          </li>    
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/new/">Download Firefox</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/">Desktop</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/mobile/">Mobile</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/features/">Features</a>
+          </li>          
+          <li>
+            <a class="footer-link" rel="noopener noreferrer" href="https://www.mozilla.org/firefox/channel/desktop/">Beta, Nightly, Developer Edition</a>
+          </li>                
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
