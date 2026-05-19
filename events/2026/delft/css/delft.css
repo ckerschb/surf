@@ -15,9 +15,12 @@ body {
   font-size: 18px;
   width: 100%;
   scroll-behavior: smooth;
-  overflow: scroll;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: none;
+}
+
+.dino {
+  pointer-events: none;
 }
 
 #map { position: absolute; top: 0; bottom: 0; left: 0; right: 0}
