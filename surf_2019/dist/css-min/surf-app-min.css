@@ -270,14 +270,6 @@ footer .row {
   background-image: url("/surf_2019/dist/img/benvds.jpeg");
 }
 
-.choller {
-  background-image: url("/surf_2019/dist/img/choller.png");	
-}
-
-.tritter {
-  background-image: url("/surf_2019/dist/img/tritter.jpg");	
-}
-
 @media screen and (max-width:850px) {
 	h1 {
 		font-size: 2.7rem
